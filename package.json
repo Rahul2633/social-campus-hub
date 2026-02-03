@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:full": "npm install && cd backend && npm install && cd .. && vite build",
+    "prestart": "npm run build",
     "start": "node backend/server.js",
     "postinstall": "cd backend && npm install",
     "seed": "cd backend && node seed.js",
