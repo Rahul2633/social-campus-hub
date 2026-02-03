@@ -8,6 +8,7 @@
     "build": "vite build",
     "build:full": "npm install && cd backend && npm install && cd .. && vite build",
     "start": "node backend/server.js",
+    "seed": "cd backend && node seed.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
