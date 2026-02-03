@@ -8,18 +8,25 @@
     "build": "vite build",
     "build:full": "npm install && cd backend && npm install && cd .. && vite build",
     "start": "node backend/server.js",
+    "postinstall": "cd backend && npm install",
     "seed": "cd backend && node seed.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "lucide-react": "^0.344.0",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "recharts": "^2.12.2",
     "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "express": "^4.19.2",
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
